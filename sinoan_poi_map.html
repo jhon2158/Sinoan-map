@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd7540f785f646234436637f9b69840a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+<style>
+/* Force the map container to a fixed mobile-friendly height */
+.leaflet-container { min-height: 720px !important; height: 720px !important; }
+@media (max-width: 600px) {
+  .leaflet-container { min-height: 520px !important; height: 520px !important; }
+}
+</style>
+    
+            <div class="folium-map" id="map_dd7540f785f646234436637f9b69840a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd7540f785f646234436637f9b69840a = L.map(
+                "map_dd7540f785f646234436637f9b69840a",
+                {
+                    center: [20.0, 100.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_dd7540f785f646234436637f9b69840a);
+
+            
+
+        
+    
+            var tile_layer_7bb968ebaa878b14cf9aacd196cafa9d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+            var marker_ebbbed46a7f6abc635031282a7c911de = L.marker(
+                [51.467, 84.68],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_9c7f204b4271c5c3e8ae8dccc5a57fcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbfab1891932ea6f8cd6be83f44432b0 = $(`<div id="html_fbfab1891932ea6f8cd6be83f44432b0" style="width: 100.0%; height: 100.0%;"><b>Denisova Cave, Siberia</b><br>~300,000–50,000 BCE<br><i>Origin / Genetics</i></div>`)[0];
+            popup_9c7f204b4271c5c3e8ae8dccc5a57fcf.setContent(html_fbfab1891932ea6f8cd6be83f44432b0);
+        
+
+        marker_ebbbed46a7f6abc635031282a7c911de.bindPopup(popup_9c7f204b4271c5c3e8ae8dccc5a57fcf)
+        ;
+
+        
+    
+    
+            marker_ebbbed46a7f6abc635031282a7c911de.bindTooltip(
+                `<div>
+                     Denisova Cave, Siberia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67916c469e745c7a80ccdda10119e9c8 = L.marker(
+                [39.9, 115.9],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_8245befa0a8ee285862d4f205586eece = L.popup({"maxWidth": "100%"});
+
+        
+            var html_076c726f52513d8b5e12be9351295c6e = $(`<div id="html_076c726f52513d8b5e12be9351295c6e" style="width: 100.0%; height: 100.0%;"><b>Tianyuan Cave, China</b><br>~40,000 BCE<br><i>Genetics / Archaeology</i></div>`)[0];
+            popup_8245befa0a8ee285862d4f205586eece.setContent(html_076c726f52513d8b5e12be9351295c6e);
+        
+
+        marker_67916c469e745c7a80ccdda10119e9c8.bindPopup(popup_8245befa0a8ee285862d4f205586eece)
+        ;
+
+        
+    
+    
+            marker_67916c469e745c7a80ccdda10119e9c8.bindTooltip(
+                `<div>
+                     Tianyuan Cave, China
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19ad257a7311fd0705362122a4fdfc83 = L.marker(
+                [29.74, 107.07],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_da58daecb30a3d1afc70d08b31156d09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff18e84d6d15a1375317ff69f7cecfe3 = $(`<div id="html_ff18e84d6d15a1375317ff69f7cecfe3" style="width: 100.0%; height: 100.0%;"><b>Baiheliang, China</b><br>~35,000 BCE<br><i>Hydrology / Engineering</i></div>`)[0];
+            popup_da58daecb30a3d1afc70d08b31156d09.setContent(html_ff18e84d6d15a1375317ff69f7cecfe3);
+        
+
+        marker_19ad257a7311fd0705362122a4fdfc83.bindPopup(popup_da58daecb30a3d1afc70d08b31156d09)
+        ;
+
+        
+    
+    
+            marker_19ad257a7311fd0705362122a4fdfc83.bindTooltip(
+                `<div>
+                     Baiheliang, China
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a3334dd6fd9ca7f7af22d7f492fffee = L.marker(
+                [-6.99, 107.04],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_31a42477b4482e177e473d2a1052c479 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d98dab47f5502f1b08af812ac28f5b3f = $(`<div id="html_d98dab47f5502f1b08af812ac28f5b3f" style="width: 100.0%; height: 100.0%;"><b>Gunung Padang, Indonesia</b><br>~25,000–12,000 BCE<br><i>Megalith / Astronomy</i></div>`)[0];
+            popup_31a42477b4482e177e473d2a1052c479.setContent(html_d98dab47f5502f1b08af812ac28f5b3f);
+        
+
+        marker_5a3334dd6fd9ca7f7af22d7f492fffee.bindPopup(popup_31a42477b4482e177e473d2a1052c479)
+        ;
+
+        
+    
+    
+            marker_5a3334dd6fd9ca7f7af22d7f492fffee.bindTooltip(
+                `<div>
+                     Gunung Padang, Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac35bce69adfeff40d54863db417c026 = L.marker(
+                [3.1, 115.1],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_e5079d69003b149fdd4f9b0ff76a5740 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71a26c37272e0536737d2b29a65b3900 = $(`<div id="html_71a26c37272e0536737d2b29a65b3900" style="width: 100.0%; height: 100.0%;"><b>Borneo Cave Paintings</b><br>~20,000 BCE<br><i>Art / Culture</i></div>`)[0];
+            popup_e5079d69003b149fdd4f9b0ff76a5740.setContent(html_71a26c37272e0536737d2b29a65b3900);
+        
+
+        marker_ac35bce69adfeff40d54863db417c026.bindPopup(popup_e5079d69003b149fdd4f9b0ff76a5740)
+        ;
+
+        
+    
+    
+            marker_ac35bce69adfeff40d54863db417c026.bindTooltip(
+                `<div>
+                     Borneo Cave Paintings
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e152126465113eab1b71e8ca5135ac4 = L.marker(
+                [6.84, 158.33],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_02992807f66a142dd9d6d93c846125f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63f5af84c08015704d3732bc0e046450 = $(`<div id="html_63f5af84c08015704d3732bc0e046450" style="width: 100.0%; height: 100.0%;"><b>Nan Madol, Pohnpei</b><br>~14,000–4,000 BCE<br><i>Engineering / Navigation</i></div>`)[0];
+            popup_02992807f66a142dd9d6d93c846125f2.setContent(html_63f5af84c08015704d3732bc0e046450);
+        
+
+        marker_0e152126465113eab1b71e8ca5135ac4.bindPopup(popup_02992807f66a142dd9d6d93c846125f2)
+        ;
+
+        
+    
+    
+            marker_0e152126465113eab1b71e8ca5135ac4.bindTooltip(
+                `<div>
+                     Nan Madol, Pohnpei
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3246dad6c0273d05d3038a447a45c72 = L.marker(
+                [37.223, 38.922],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_e35558b9720dd1953259ef502fecb741 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c80f590a96d120d47ee006d40e810028 = $(`<div id="html_c80f590a96d120d47ee006d40e810028" style="width: 100.0%; height: 100.0%;"><b>Göbekli Tepe, Turkey</b><br>~11,600 BCE<br><i>Megalith / Religion</i></div>`)[0];
+            popup_e35558b9720dd1953259ef502fecb741.setContent(html_c80f590a96d120d47ee006d40e810028);
+        
+
+        marker_b3246dad6c0273d05d3038a447a45c72.bindPopup(popup_e35558b9720dd1953259ef502fecb741)
+        ;
+
+        
+    
+    
+            marker_b3246dad6c0273d05d3038a447a45c72.bindTooltip(
+                `<div>
+                     Göbekli Tepe, Turkey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e543bb4aa189fb3147a2b92667b9dfc1 = L.marker(
+                [36.27, 127.5],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_d2c5e1612630f4fe13ffdb7c8b484e6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bc0d5e8f9987a90fbc8f9c8dd66b814 = $(`<div id="html_1bc0d5e8f9987a90fbc8f9c8dd66b814" style="width: 100.0%; height: 100.0%;"><b>Baekje Dolmens, Korea</b><br>~10,000–3,000 BCE<br><i>Burial / Culture</i></div>`)[0];
+            popup_d2c5e1612630f4fe13ffdb7c8b484e6f.setContent(html_1bc0d5e8f9987a90fbc8f9c8dd66b814);
+        
+
+        marker_e543bb4aa189fb3147a2b92667b9dfc1.bindPopup(popup_d2c5e1612630f4fe13ffdb7c8b484e6f)
+        ;
+
+        
+    
+    
+            marker_e543bb4aa189fb3147a2b92667b9dfc1.bindTooltip(
+                `<div>
+                     Baekje Dolmens, Korea
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_930225275b95568474e395cbbb234bdc = L.marker(
+                [34.005, 36.203],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_d479891da5f94f83e02f0c1333e347bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a8fa6b5604a4243d48deb7764dc5742 = $(`<div id="html_0a8fa6b5604a4243d48deb7764dc5742" style="width: 100.0%; height: 100.0%;"><b>Baalbek, Lebanon</b><br>~9,000–3,000 BCE<br><i>Megalith / Engineering</i></div>`)[0];
+            popup_d479891da5f94f83e02f0c1333e347bd.setContent(html_0a8fa6b5604a4243d48deb7764dc5742);
+        
+
+        marker_930225275b95568474e395cbbb234bdc.bindPopup(popup_d479891da5f94f83e02f0c1333e347bd)
+        ;
+
+        
+    
+    
+            marker_930225275b95568474e395cbbb234bdc.bindTooltip(
+                `<div>
+                     Baalbek, Lebanon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fa6d995c23dad8a5f3ad4c378f33553 = L.marker(
+                [29.979, 31.134],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_c774a4c9384e329fe5ffb3b0104b3f97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce44f741afb67a8f5242ea6fce9a6902 = $(`<div id="html_ce44f741afb67a8f5242ea6fce9a6902" style="width: 100.0%; height: 100.0%;"><b>Giza Pyramids, Egypt</b><br>~2,600 BCE<br><i>Architecture / Politics</i></div>`)[0];
+            popup_c774a4c9384e329fe5ffb3b0104b3f97.setContent(html_ce44f741afb67a8f5242ea6fce9a6902);
+        
+
+        marker_0fa6d995c23dad8a5f3ad4c378f33553.bindPopup(popup_c774a4c9384e329fe5ffb3b0104b3f97)
+        ;
+
+        
+    
+    
+            marker_0fa6d995c23dad8a5f3ad4c378f33553.bindTooltip(
+                `<div>
+                     Giza Pyramids, Egypt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34a278cb76ca662b3b87351fdca5b78b = L.marker(
+                [27.329, 68.138],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_0b6d7e8dd178a0092a2a362385c69659 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f79351901b91ee9449932b164cb95d2 = $(`<div id="html_5f79351901b91ee9449932b164cb95d2" style="width: 100.0%; height: 100.0%;"><b>Mohenjo-daro, Pakistan</b><br>~2,500 BCE<br><i>Urban Planning / Sanitation</i></div>`)[0];
+            popup_0b6d7e8dd178a0092a2a362385c69659.setContent(html_5f79351901b91ee9449932b164cb95d2);
+        
+
+        marker_34a278cb76ca662b3b87351fdca5b78b.bindPopup(popup_0b6d7e8dd178a0092a2a362385c69659)
+        ;
+
+        
+    
+    
+            marker_34a278cb76ca662b3b87351fdca5b78b.bindTooltip(
+                `<div>
+                     Mohenjo-daro, Pakistan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18e6069ba7e2e44d94e6c64bce21102d = L.marker(
+                [20.022, 75.179],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_0ad24ae5d70084dcc2bf763e4bea090f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bd5be3038c63373eed30f4c2cec1692 = $(`<div id="html_7bd5be3038c63373eed30f4c2cec1692" style="width: 100.0%; height: 100.0%;"><b>Kailasa Temple, India</b><br>~1,000 BCE–700 CE<br><i>Rock-cut / Religion</i></div>`)[0];
+            popup_0ad24ae5d70084dcc2bf763e4bea090f.setContent(html_7bd5be3038c63373eed30f4c2cec1692);
+        
+
+        marker_18e6069ba7e2e44d94e6c64bce21102d.bindPopup(popup_0ad24ae5d70084dcc2bf763e4bea090f)
+        ;
+
+        
+    
+    
+            marker_18e6069ba7e2e44d94e6c64bce21102d.bindTooltip(
+                `<div>
+                     Kailasa Temple, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adb603b314aaf49cbb9376f9345d23f7 = L.marker(
+                [-27.116, -109.366],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_881a9f1ef318185c0f934d2ce92fa92f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c6683666d3e97b5596204164500511a = $(`<div id="html_1c6683666d3e97b5596204164500511a" style="width: 100.0%; height: 100.0%;"><b>Easter Island</b><br>~800–1200 CE<br><i>Navigation / Megalith</i></div>`)[0];
+            popup_881a9f1ef318185c0f934d2ce92fa92f.setContent(html_1c6683666d3e97b5596204164500511a);
+        
+
+        marker_adb603b314aaf49cbb9376f9345d23f7.bindPopup(popup_881a9f1ef318185c0f934d2ce92fa92f)
+        ;
+
+        
+    
+    
+            marker_adb603b314aaf49cbb9376f9345d23f7.bindTooltip(
+                `<div>
+                     Easter Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78672ea7b600029223bd00977aec6b3f = L.marker(
+                [-13.163, -72.545],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_320b29f9538816f140fdc6917cb21a64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bff001bf299166c81afa3d75bbc23a9f = $(`<div id="html_bff001bf299166c81afa3d75bbc23a9f" style="width: 100.0%; height: 100.0%;"><b>Machu Picchu, Peru</b><br>~1450 CE<br><i>Masonry / Agriculture</i></div>`)[0];
+            popup_320b29f9538816f140fdc6917cb21a64.setContent(html_bff001bf299166c81afa3d75bbc23a9f);
+        
+
+        marker_78672ea7b600029223bd00977aec6b3f.bindPopup(popup_320b29f9538816f140fdc6917cb21a64)
+        ;
+
+        
+    
+    
+            marker_78672ea7b600029223bd00977aec6b3f.bindTooltip(
+                `<div>
+                     Machu Picchu, Peru
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30288ab8c81cbf04c05d7a1d5eb6c5e5 = L.marker(
+                [-16.554, -68.673],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_be161b343b52514814c67d7f84a3d67c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c87406b0990e75a5c5f1e0d72975adf6 = $(`<div id="html_c87406b0990e75a5c5f1e0d72975adf6" style="width: 100.0%; height: 100.0%;"><b>Tiwanaku, Bolivia</b><br>~500–1000 CE<br><i>Astronomy / Masonry</i></div>`)[0];
+            popup_be161b343b52514814c67d7f84a3d67c.setContent(html_c87406b0990e75a5c5f1e0d72975adf6);
+        
+
+        marker_30288ab8c81cbf04c05d7a1d5eb6c5e5.bindPopup(popup_be161b343b52514814c67d7f84a3d67c)
+        ;
+
+        
+    
+    
+            marker_30288ab8c81cbf04c05d7a1d5eb6c5e5.bindTooltip(
+                `<div>
+                     Tiwanaku, Bolivia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37fc21d31ef9639c667816a6f98f399a = L.marker(
+                [-7.607, 110.203],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_19126e4711e9f3e79f69f17859bd709d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eac15807a91cfd79475cde2fed938298 = $(`<div id="html_eac15807a91cfd79475cde2fed938298" style="width: 100.0%; height: 100.0%;"><b>Borobudur, Indonesia</b><br>~800 CE<br><i>Architecture / Religion</i></div>`)[0];
+            popup_19126e4711e9f3e79f69f17859bd709d.setContent(html_eac15807a91cfd79475cde2fed938298);
+        
+
+        marker_37fc21d31ef9639c667816a6f98f399a.bindPopup(popup_19126e4711e9f3e79f69f17859bd709d)
+        ;
+
+        
+    
+    
+            marker_37fc21d31ef9639c667816a6f98f399a.bindTooltip(
+                `<div>
+                     Borobudur, Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9d0d2d0f1a49f18e274e42d7da54b79 = L.marker(
+                [13.412, 103.866],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_f650055b1dbbc1714f29fbf6bac121fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c32895091e5b11d42761891f8d119d8 = $(`<div id="html_1c32895091e5b11d42761891f8d119d8" style="width: 100.0%; height: 100.0%;"><b>Angkor Wat, Cambodia</b><br>~1100–1200 CE<br><i>Hydraulic / Architecture</i></div>`)[0];
+            popup_f650055b1dbbc1714f29fbf6bac121fe.setContent(html_1c32895091e5b11d42761891f8d119d8);
+        
+
+        marker_e9d0d2d0f1a49f18e274e42d7da54b79.bindPopup(popup_f650055b1dbbc1714f29fbf6bac121fe)
+        ;
+
+        
+    
+    
+            marker_e9d0d2d0f1a49f18e274e42d7da54b79.bindTooltip(
+                `<div>
+                     Angkor Wat, Cambodia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3afddb13abddfa592db8e7998e0d806f = L.marker(
+                [-20.27, 30.93],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_a680165e016f58fa9de0aed2f66ebf11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78409c0920036bfede7b15000c2eb28c = $(`<div id="html_78409c0920036bfede7b15000c2eb28c" style="width: 100.0%; height: 100.0%;"><b>Great Zimbabwe</b><br>~1100–1400 CE<br><i>Architecture / Economy</i></div>`)[0];
+            popup_a680165e016f58fa9de0aed2f66ebf11.setContent(html_78409c0920036bfede7b15000c2eb28c);
+        
+
+        marker_3afddb13abddfa592db8e7998e0d806f.bindPopup(popup_a680165e016f58fa9de0aed2f66ebf11)
+        ;
+
+        
+    
+    
+            marker_3afddb13abddfa592db8e7998e0d806f.bindTooltip(
+                `<div>
+                     Great Zimbabwe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dd9af7d9458b82fe94faf999e52a5bb = L.marker(
+                [-25.345, 131.036],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_f05aab47db5ed71173180e017b572627 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f9cb2ce59a8cc9e0c8823dc53bdb18a = $(`<div id="html_1f9cb2ce59a8cc9e0c8823dc53bdb18a" style="width: 100.0%; height: 100.0%;"><b>Uluru, Australia</b><br>Ancient–Present<br><i>Cultural / Navigation</i></div>`)[0];
+            popup_f05aab47db5ed71173180e017b572627.setContent(html_1f9cb2ce59a8cc9e0c8823dc53bdb18a);
+        
+
+        marker_1dd9af7d9458b82fe94faf999e52a5bb.bindPopup(popup_f05aab47db5ed71173180e017b572627)
+        ;
+
+        
+    
+    
+            marker_1dd9af7d9458b82fe94faf999e52a5bb.bindTooltip(
+                `<div>
+                     Uluru, Australia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dc8731bbd35df1ed903d62456917cf9 = L.marker(
+                [40.749, 14.487],
+                {}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+    
+        var popup_283c26c05b8f80bf51c00f1da4ca7494 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b4aede998172ca4741567a0082f4f61 = $(`<div id="html_4b4aede998172ca4741567a0082f4f61" style="width: 100.0%; height: 100.0%;"><b>Pompeii, Italy</b><br>79 CE<br><i>Urban / Culture</i></div>`)[0];
+            popup_283c26c05b8f80bf51c00f1da4ca7494.setContent(html_4b4aede998172ca4741567a0082f4f61);
+        
+
+        marker_0dc8731bbd35df1ed903d62456917cf9.bindPopup(popup_283c26c05b8f80bf51c00f1da4ca7494)
+        ;
+
+        
+    
+    
+            marker_0dc8731bbd35df1ed903d62456917cf9.bindTooltip(
+                `<div>
+                     Pompeii, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f795d1a9a60daeb56133a47756e334ce = L.polyline(
+                [[51.467, 84.68], [39.9, 115.9], [29.74, 107.07], [-6.99, 107.04], [6.84, 158.33], [37.223, 38.922], [34.005, 36.203], [29.979, 31.134], [20.022, 75.179], [27.329, 68.138], [-7.607, 110.203], [13.412, 103.866], [-16.554, -68.673], [-13.163, -72.545], [-27.116, -109.366]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_dd7540f785f646234436637f9b69840a);
+        
+</script>
+</html>
